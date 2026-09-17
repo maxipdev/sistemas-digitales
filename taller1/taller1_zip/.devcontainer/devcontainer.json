@@ -1,0 +1,14 @@
+{
+  "name": "sd-taller1",
+  "image": "twint/sd:latest",
+  "features": {},
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "twint.hdl-studio",
+        "mshr-h.veriloghdl",
+        "gxl.git-graph-3"
+      ]
+    }
+  }
+}

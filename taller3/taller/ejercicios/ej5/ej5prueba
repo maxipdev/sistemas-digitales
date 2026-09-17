@@ -1,0 +1,90 @@
+logic [3:0] bus_read;
+  logic [3:0] bus_write;
+  logic [3:0] add_value, sub_value;
+  
+  assign bus_write = force_we ? force_in : result;
+  
+  registro_4b r0(
+    .clk(clk),
+    .rst(rst),
+    .we(force_we & (dst == 2'b00)),
+    .din(bus_write),
+    .q(reg_a)
+  );
+  
+  registro_4b r1(
+    .clk(clk),
+    .rst(rst),
+    .we(force_we & (dst == 2'b01)),
+    .din(bus_write),
+    .q(reg_b)
+  );
+  
+  registro_4b r2(
+    .clk(clk),
+    .rst(rst),
+    .we(force_we & (dst == 2'b10)),
+    .din(bus_write),
+    .q(reg_c)
+  );
+  
+  registro_4b r3(
+    .clk(clk),
+    .rst(rst),
+    .we(force_we & (dst == 2'b11)),
+    .din(bus_write),
+    .q(reg_d)
+  );
+
+  registro_4b op_a(
+    .clk(clk),
+    .rst(rst),
+    .we(load_op_a),
+    .din(bus_read),
+    .q(operand_a)
+  );
+
+  registro_4b op_b(
+    .clk(clk),
+    .rst(rst),
+    .we(load_op_b),
+    .din(bus_read),
+    .q(operand_b)
+  );
+
+  sumador_4b sumador(
+    .a(operand_a),
+    .b(operand_b),
+    .cin(1'b0),
+    .sum(add_value),
+    .cout()
+  );
+
+  restador_4b restador(
+    .a(operand_a),
+    .b(operand_b),
+    .bin(1'b0),
+    .diff(sub_value),
+    .bout()
+  );
+
+  assign and_value = operand_a & operand_b;
+  assign or_value = operand_a | operand_b;
+  
+  always_comb begin
+    case (op)
+      2'b00:  result = add_value;
+      2'b01:  result = sub_value;
+      2'b10:  result = and_value;
+      default:  result = or_value;
+    endcase  
+  end
+  
+  always_comb begin
+    case (src)
+      2'b00:  bus_read = reg_a;
+      2'b01:  bus_read = reg_b;
+      2'b10:  bus_read = reg_c;
+      default:  bus_read = reg_d;
+    endcase  
+  end

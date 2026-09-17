@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+    <meta charset="UTF-8">
+    <title>Ejercicios de Aritmética Binaria</title>
+</head>
+<body>
+    <p>Completar la siguiente tabla, calculando <strong>Res = Op1 + Op2</strong> (es decir, la suma <em>bit a bit</em>).<br>
+    Interpretar los operandos y el resultado tanto en Sin Signo como en Complemento a 2.</p>
+
+    <table border="1" cellpadding="5" cellspacing="0" style="text-align: center; border-collapse: collapse; width: 100%;">
+        <thead>
+            <tr>
+                <th colspan="2">Operandos</th>
+                <th colspan="5">Sin signo</th>
+                <th colspan="5">Complemento a 2</th>
+            </tr>
+            <tr>
+                <th>Op1</th>
+                <th>Op2</th>
+                <th>Op1<sub>10</sub></th>
+                <th>Op2<sub>10</sub></th>
+                <th>Res (bits)</th>
+                <th>Res<sub>10</sub></th>
+                <th>V?</th>
+                <th>Op1<sub>10</sub></th>
+                <th>Op2<sub>10</sub></th>
+                <th>Res (bits)</th>
+                <th>Res<sub>10</sub></th>
+                <th>V?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1111</td>
+                <td>0001</td>
+                <td>15</td>
+                <td>1</td>
+                <td>0000</td>
+                <td>0</td>
+                <td>1</td>
+                <td>-1</td>
+                <td>1</td>
+                <td>0000</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0001</td>
+                <td>1111</td>
+                <td><input type="text" size="3" value="1"></td>
+                <td><input type="text" size="3" value="15"></td>
+                <td><input type="text" size="4" maxlength="4" value="0000"></td>
+                <td><input type="text" size="3" value="0"></td>
+                <td><input type="text" size="1" maxlength="1" value="1"></td>
+                <td><input type="text" size="3" value="1"></td>
+                <td><input type="text" size="3" value="-1"></td>
+                <td><input type="text" size="4" maxlength="4" value="0000"></td>
+                <td><input type="text" size="3" value="0"></td>
+                <td><input type="text" size="1" maxlength="1" value="0"></td>
+            </tr>
+            <tr>
+                <td>0101</td>
+                <td>0101</td>
+                <td><input type="text" size="3" value="5"></td>
+                <td><input type="text" size="3" value="5"></td>
+                <td><input type="text" size="4" maxlength="4" value="1010"></td>
+                <td><input type="text" size="3" value="10"></td>
+                <td><input type="text" size="1" maxlength="1" value="0"></td>
+                <td><input type="text" size="3" value="5"></td>
+                <td><input type="text" size="3" value="5"></td>
+                <td><input type="text" size="4" maxlength="4" value="1010"></td>
+                <td><input type="text" size="3" value="-6"></td>
+                <td><input type="text" size="1" maxlength="1" value="1"></td>
+            </tr>
+            <tr>
+                <td>1000</td>
+                <td>0111</td>
+                <td><input type="text" size="3" value="8"></td>
+                <td><input type="text" size="3" value="7"></td>
+                <td><input type="text" size="4" maxlength="4" value="1111"></td>
+                <td><input type="text" size="3" value="15"></td>
+                <td><input type="text" size="1" maxlength="1" value="0"></td>
+                <td><input type="text" size="3" value="-8"></td>
+                <td><input type="text" size="3" value="7"></td>
+                <td><input type="text" size="4" maxlength="4" value="1111"></td>
+                <td><input type="text" size="3" value="-1"></td>
+                <td><input type="text" size="1" maxlength="1" value="0"></td>
+            </tr>
+            <tr>
+                <td>0110</td>
+                <td>1010</td>
+                <td><input type="text" size="3" value="6"></td>
+                <td><input type="text" size="3" value="10"></td>
+                <td><input type="text" size="4" maxlength="4" value="0000"></td>
+                <td><input type="text" size="3" value="0"></td>
+                <td><input type="text" size="1" maxlength="1" value="1"></td>
+                <td><input type="text" size="3" value="6"></td>
+                <td><input type="text" size="3" value="-6"></td>
+                <td><input type="text" size="4" maxlength="4" value="0000"></td>
+                <td><input type="text" size="3" value="0"></td>
+                <td><input type="text" size="1" maxlength="1" value="0"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <p>Repetir el ejercicio anterior para <strong>Res = Op1 - Op2</strong>.</p>
+    <br>
+
+    <table border="1" cellpadding="5" cellspacing="0" style="text-align: center; border-collapse: collapse; width: 100%;">
+        <thead>
+            <tr>
+                <th colspan="2">Operandos</th>
+                <th colspan="5">Sin signo</th>
+                <th colspan="5">Complemento a 2</th>
+            </tr>
+            <tr>
+                <th>Op1</th>
+                <th>Op2</th>
+                <th>Op1<sub>10</sub></th>
+                <th>Op2<sub>10</sub></th>
+                <th>Res (bits)</th>
+                <th>Res<sub>10</sub></th>
+                <th>V?</th>
+                <th>Op1<sub>10</sub></th>
+                <th>Op2<sub>10</sub></th>
+                <th>Res (bits)</th>
+                <th>Res<sub>10</sub></th>
+                <th>V?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1000</td>
+                <td>0010</td>
+                <td>8</td>
+                <td>2</td>
+                <td>0110</td>
+                <td>6</td>
+                <td>0</td>
+                <td>-8</td>
+                <td>2</td>
+                <td>0110</td>
+                <td>6</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>0001</td>
+                <td>1111</td>
+                <td><input type="text" size="3" value="1"></td>
+                <td><input type="text" size="3" value="15"></td>
+                <td><input type="text" size="4" maxlength="4" value="0010"></td>
+                <td><input type="text" size="3" value="2"></td>
+                <td><input type="text" size="1" maxlength="1" value="1"></td>
+                <td><input type="text" size="3" value="1"></td>
+                <td><input type="text" size="3" value="-1"></td>
+                <td><input type="text" size="4" maxlength="4" value="0010"></td>
+                <td><input type="text" size="3" value="2"></td>
+                <td><input type="text" size="1" maxlength="1" value="0"></td>
+            </tr>
+            <tr>
+                <td>0101</td>
+                <td>0101</td>
+                <td><input type="text" size="3" value="5"></td>
+                <td><input type="text" size="3" value="5"></td>
+                <td><input type="text" size="4" maxlength="4" value="0000"></td>
+                <td><input type="text" size="3" value="0"></td>
+                <td><input type="text" size="1" maxlength="1" value="0"></td>
+                <td><input type="text" size="3" value="5"></td>
+                <td><input type="text" size="3" value="5"></td>
+                <td><input type="text" size="4" maxlength="4" value="0000"></td>
+                <td><input type="text" size="3" value="0"></td>
+                <td><input type="text" size="1" maxlength="1" value="0"></td>
+            </tr>
+            <tr>
+                <td>1000</td>
+                <td>0111</td>
+                <td><input type="text" size="3" value="8"></td>
+                <td><input type="text" size="3" value="7"></td>
+                <td><input type="text" size="4" maxlength="4" value="0001"></td>
+                <td><input type="text" size="3" value="1"></td>
+                <td><input type="text" size="1" maxlength="1" value="0"></td>
+                <td><input type="text" size="3" value="-8"></td>
+                <td><input type="text" size="3" value="7"></td>
+                <td><input type="text" size="4" maxlength="4" value="0001"></td>
+                <td><input type="text" size="3" value="1"></td>
+                <td><input type="text" size="1" maxlength="1" value="1"></td>
+            </tr>
+            <tr>
+                <td>0110</td>
+                <td>1010</td>
+                <td><input type="text" size="3" value="6"></td>
+                <td><input type="text" size="3" value="10"></td>
+                <td><input type="text" size="4" maxlength="4" value="1100"></td>
+                <td><input type="text" size="3" value="12"></td>
+                <td><input type="text" size="1" maxlength="1" value="1"></td>
+                <td><input type="text" size="3" value="6"></td>
+                <td><input type="text" size="3" value="-6"></td>
+                <td><input type="text" size="4" maxlength="4" value="1100"></td>
+                <td><input type="text" size="3" value="-4"></td>
+                <td><input type="text" size="1" maxlength="1" value="1"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+    <button onclick="guardarHTML()">Descargar respuestas</button>
+
+    <script>
+        function guardarHTML() {
+            const inputs = document.querySelectorAll('input');
+            inputs.forEach(input => {
+                input.setAttribute('value', input.value);
+            });
+            
+            const contenido = "<!DOCTYPE html>\n" + document.documentElement.outerHTML;
+            const blob = new Blob([contenido], { type: "text/html" });
+            const enlace = document.createElement("a");
+            
+            enlace.href = URL.createObjectURL(blob);
+            enlace.download = "ejercicios_resueltos.html";
+            enlace.click();
+            
+            URL.revokeObjectURL(enlace.href);
+        }
+    </script>
+
+</body></html>
