@@ -3,16 +3,15 @@
 ## Segundo Cuatrimestre del 2026
 ### Primer Materias de área de sistemas. Ex Orga I
 
----
-
 En este reposotorio se puede encontrar el maetrial de estudio como los talleres resueltos
+
 
 ## Talleres
 
 la materia esta organizada con 8 talleres, 4 individales y 4 grupales.
 Los talleres esta hechos con *Docker*
 
--- Para poder ejecutar los talleres es necesario tener descargado docker desktop
+-- Para poder ejecutar los talleres es necesario tener descargado ***docker desktop***
 
 [Descargar docker desktop](https://www.docker.com/products/docker-desktop/)
 
@@ -22,11 +21,12 @@ Primero es nescesario abrir el taller en el *modo* 'contenedor', y luego para ej
 
 **Guia rapida de acceso a los talleres*
 
-| Numero | Descripción
-| [Taller 1](./taller1/) | Circuitos Combinacionales (Sumador, Restador completo, Inversores, Compuertas AND, OR para 4 bits)
-| [Taller 2](./taller2/) | Circuitos Secuenciales (Flip-flops D, Registros, Sumador + registro para 4 Bits)
-| [Taller 3](./taller3/) | Introducción a la ALU *muy básico*
-| [Taller 4](./taller4/) | Representanción de la información (Sumadores para complemento a 2)
+| Numero | Descripción |
+|---|---|
+| [Taller 1](./taller1/) | Circuitos Combinacionales (Sumador, Restador completo, Inversores, Compuertas AND, OR para 4 bits) |
+| [Taller 2](./taller2/) | Circuitos Secuenciales (Flip-flops D, Registros, Sumador + registro para 4 Bits) |
+| [Taller 3](./taller3/) | Introducción a la ALU *muy básico* |
+| [Taller 4](./taller4/) | Representanción de la información (Sumadores para complemento a 2) |
 
 
 ## Material de estudio
