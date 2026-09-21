@@ -80,4 +80,3 @@ module porton_fsm (
     endcase
   end
 endmodule
-
