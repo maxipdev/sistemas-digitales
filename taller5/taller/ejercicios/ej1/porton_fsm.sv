@@ -7,9 +7,9 @@ module porton_fsm (
     output logic abierto,
     output logic cerrando
 );
-  // COMPLETAR: FSM Moore con estados CERRADO, ABRIENDO, ABIERTO y CERRANDO.
+  
 
-  // Controlo los clicks del clock -> para mantener la memoria
+  
 
   typedef enum logic [1:0] {
     S0, S1, S2, S3
@@ -24,7 +24,7 @@ module porton_fsm (
       current_state <= next_state;
   end
 
-  // Funcion de transicion
+  // 
   always_comb begin
     next_state = current_state;
 
